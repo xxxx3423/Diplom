@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Готель "Затишок"</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="Логотип готелю">
+  </a>
+
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-link active">Home</a>
+  <a href="about.html" class="nav-link">About</a>
+  <a href="services.html" class="nav-link">Services</a>
+  <a href="contact.html" class="nav-link contact-btn">Contacts</a>
+</nav>
+</header>
+
+<!-- HERO БАНЕР -->
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Hotel</h1>
+      <p>
+        Відчуйте справжній комфорт, елегантність та преміальний сервіс
+        у самому серці міста.
+      </p>
+      <a href="contact.html" class="hero-btn">Забронювати номер</a>
+    </div>
+  </div>
+</section>
+
+<!-- ПРО ГОТЕЛЬ -->
+<section class="hotel-info">
+  <div class="hotel-image">
+    <img src="img/hotel-main.png" alt="Готель Затишок">
+  </div>
+
+  <div class="hotel-text">
+    <h2>Про готель "Затишок"</h2>
+    <p>
+      Готель <strong>"Затишок"</strong> — це сучасний готель преміум-класу,
+      створений для комфортного відпочинку, ділових поїздок та приємного
+      проведення часу у самому центрі міста.
+    </p>
+
+    <p>
+      Ми поєднали стильний інтер’єр, високий рівень сервісу та затишну
+      атмосферу, щоб кожен гість почувався особливо. Просторі номери,
+      сучасне оснащення, ресторан, зона релаксу та бездоганне обслуговування
+      створюють ідеальні умови для вашого перебування.
+    </p>
+
+    <p>
+      Завдяки зручному розташуванню, наші гості мають швидкий доступ до
+      туристичних місць, бізнес-центрів, ресторанів та культурних пам’яток міста.
+    </p>
+  </div>
+</section>
+
+<!-- ЧОМУ ОБИРАЮТЬ НАС -->
+<section class="advantages">
+  <h2>Чому обирають нас</h2>
+
+  <div class="adv-cards">
+
+    <div class="adv-card">
+      <div class="icon">
+        <i class="fas fa-bed"></i>
+      </div>
+      <h3>Комфортні номери</h3>
+      <p>Сучасні, просторі та затишні номери для ідеального відпочинку.</p>
+    </div>
+
+    <div class="adv-card">
+      <div class="icon">
+        <i class="fas fa-concierge-bell"></i>
+      </div>
+      <h3>Преміальний сервіс</h3>
+      <p>Цілодобове обслуговування, турбота про гостей та високий рівень комфорту.</p>
+    </div>
+
+    <div class="adv-card">
+      <div class="icon">
+        <i class="fas fa-map-marker-alt"></i>
+      </div>
+      <h3>Ідеальне розташування</h3>
+      <p>Готель знаходиться у центрі міста поруч з основними локаціями.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- НАШІ ПОСЛУГИ -->
+<section class="services-preview">
+  <h2>Наші послуги</h2>
+
+  <div class="service-cards">
+
+  <div class="service-card">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <h3>Номери класу люкс</h3>
+    <p>Елегантні номери з усіма необхідними зручностями.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="icon">
+      <i class="fas fa-spa"></i>
+    </div>
+    <h3>Спа та фітнес</h3>
+    <p>Зона відпочинку та оздоровлення для наших гостей.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="icon">
+      <i class="fas fa-utensils"></i>
+    </div>
+    <h3>Ресторан</h3>
+    <p>Вишукані страви європейської кухні у приємній атмосфері.</p>
+  </div>
+
+</div>
+</section>
+
+<!-- ГАЛЕРЕЯ -->
+<section class="gallery">
+  <h2>Галерея</h2>
+
+  <div class="gallery-grid">
+    <img src="img/gallery1.png" alt="Фото готелю 1">
+    <img src="img/gallery2.png" alt="Фото готелю 2">
+    <img src="img/gallery3.png" alt="Фото готелю 3">
+    <img src="img/gallery4.png" alt="Фото готелю 4">
+  </div>
+</section>
+
+<!-- КОНТАКТИ -->
+<section class="contact-preview">
+  <h2>Контакти</h2>
+  <p><strong>Телефон:</strong> +38 (050) 123-45-67</p>
+  <p><strong>Email:</strong> info@zatishok.ua</p>
+  <p><strong>Адреса:</strong> м. Львів, вул. Центральна, 10</p>
+</section>
+
+<!-- ЧАТ -->
+<div id="chat-container">
+  <button id="chat-toggle">💬 Онлайн-чат</button>
+  <div id="chat-box" class="hidden">
+    <div id="chat-messages"></div>
+    <input type="text" id="chat-input" placeholder="Напишіть повідомлення..." />
+    <button id="send-btn">Надіслати</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Готель "Затишок"</h3>
+    <p>Преміальний комфорт, стиль та сервіс для кожного гостя.</p>
+    <p>© 2026 Готель "Затишок". Усі права захищено.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
