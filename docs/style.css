@@ -451,12 +451,12 @@ section ul {
   flex-direction: column;
   background: white;
   border: none;
-  padding: 12px;
-  width: 280px;
-  height: 340px;
+  width: 420px;      
+  height: 600px;     
+  padding: 15px;
   margin-top: 10px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.3);
 }
 
 #chat-box.hidden,
@@ -467,11 +467,12 @@ section ul {
 #chat-messages {
   flex: 1;
   overflow-y: auto;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin-bottom: 12px;
   border: 1px solid #ddd;
-  padding: 10px;
-  border-radius: 10px;
+  border-radius: 12px;
   color: black;
+  min-height: 400px;
 }
 
 #chat-input {
@@ -729,10 +730,10 @@ section ul {
   }
 
   #chat-box {
-    width: 90vw;
-    max-width: 320px;
-    height: 300px;
-  }
+  width: 95vw;
+  max-width: 400px;
+  height: 500px;
+}
 
   #chat-toggle {
     padding: 10px 14px;
@@ -1156,4 +1157,44 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #222;
+}
+.quick-buttons {
+  margin-bottom: 15px;
+}
+
+.faq-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.faq-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-btn {
+  width: 100%;
+  text-align: left;
+
+  background: #f8f8f8;
+  color: #333;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+  padding: 12px 14px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-btn:hover {
+  background: #c47b1f;
+  color: white;
+  transform: translateX(5px);
 }
